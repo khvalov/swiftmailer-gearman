@@ -24,4 +24,4 @@ class Mailer extends BaseMailer
         return true;
     
     }
-    
+}
