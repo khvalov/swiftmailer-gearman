@@ -12,8 +12,7 @@
     "require": {
         "yiisoft/yii2-swiftmailer":"*",
         "shakura/yii2-gearman": "dev-master",
-        "yiisoft/yii2": "~2.0.4",
-        "swiftmailer/swiftmailer": "~6.0"
+        "yiisoft/yii2": "~2.0.4"
     },
     "repositories": [
         {
