@@ -17,8 +17,7 @@ class MailerJob extends JobBase
             $address = implode(', ', array_keys($address));
         }
         
-        echo ('Sending email "' . $message->getSubject() . '" to "' . $address . '"');
-        echo PHP_EOL;
+        \Yii::info('Sending email "' . $message->getSubject() . '" to "' . $address . '"', __METHOD__);
 
 
         $mailer->send($message->getSwiftMessage());
