@@ -23,7 +23,25 @@ Config:
               ],
           ]
         ],
+        
 ...
+        'mailer' => [
+            'class' => 'khvalov\swiftmailer\Mailer',
+            'viewPath' => '@common/mail',
+            'messageConfig' => [
+                'from' => ['robot@yourdomain.tld' => 'Your Robot'],
+            ],
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'localhost',
+                'username' => 'user',
+                'password' => 'password',
+                'port' => '587',
+                'encryption' => 'tls',
+            ],
+            //'useFileTransport' => true,
+        ],
+        ...
 ]
 ```
 [Deatils on Gearman extension for Yii2 ](https://github.com/shakura/yii2-gearman)
