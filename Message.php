@@ -5,7 +5,7 @@ use Yii;
 use yii\base\InvalidConfigException;
 use yii\mswiftmailer;
 
-class Message extends yii\swiftmailer\Message
+class Message extends \yii\swiftmailer\Message
 {
  
     public function sendBackground($mailer = null){
